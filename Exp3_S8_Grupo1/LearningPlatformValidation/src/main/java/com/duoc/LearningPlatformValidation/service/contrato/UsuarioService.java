@@ -5,6 +5,10 @@ import com.duoc.LearningPlatformValidation.model.Usuario;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Interfaz que define las operaciones de negocio para la entidad Usuario.
+ */
+
 public interface UsuarioService {
 
     List<Usuario> findAll();

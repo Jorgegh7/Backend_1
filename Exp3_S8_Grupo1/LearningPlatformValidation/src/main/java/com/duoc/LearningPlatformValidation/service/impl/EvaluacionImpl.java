@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Implementación del servicio de Evaluacion.
+ * Valida que el curso exista antes de guardar o actualizar una evaluación.
+ */
+
 @Service
 public class EvaluacionImpl implements EvaluacionService {
     

@@ -7,6 +7,12 @@ import lombok.Setter;
 
 import java.util.Date;
 
+/**
+ * Entidad que representa la inscripción de un estudiante en un curso.
+ * La fecha de inscripción se genera automáticamente mediante @PrePersist
+ * al momento de persistir el registro en la base de datos.
+ */
+
 @Entity
 @Table(name = "inscripciones")
 @Getter

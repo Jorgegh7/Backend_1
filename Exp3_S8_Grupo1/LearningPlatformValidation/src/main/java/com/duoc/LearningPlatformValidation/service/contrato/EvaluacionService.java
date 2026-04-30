@@ -6,6 +6,10 @@ import com.duoc.LearningPlatformValidation.model.Evaluacion;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Interfaz que define las operaciones de negocio para la entidad Evaluacion.
+ */
+
 public interface EvaluacionService {
 
     List<Evaluacion> findAll();

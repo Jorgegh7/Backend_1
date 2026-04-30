@@ -13,6 +13,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Implementación del servicio de Inscripcion.
+ * Valida que el estudiante tenga rol ESTUDIANTE y que el curso exista
+ * antes de registrar una inscripción.
+ */
+
 @Service
 public class InscripcionImpl implements InscripcionService {
 

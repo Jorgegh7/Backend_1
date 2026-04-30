@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Implementación del servicio de Usuario.
+ * Gestiona las operaciones CRUD y validaciones de la entidad Usuario.
+ */
+
 @Service
 public class UsuarioServiceImpl implements UsuarioService {
 
@@ -54,10 +59,10 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Boolean delete(Long id) {
-        if (!usuarioRepository.existsById(id)) {
-            throw new RuntimeException("Usuario no encontrado");
+        if (usuarioRepository.existsById(id)) {
+            usuarioRepository.deleteById(id);
+            return true;
         }
-        usuarioRepository.deleteById(id);
-        return true;
+        throw new RuntimeException("Usuario no encontrado");
     }
 }

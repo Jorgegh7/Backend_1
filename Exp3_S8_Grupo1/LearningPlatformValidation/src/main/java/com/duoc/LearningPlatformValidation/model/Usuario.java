@@ -8,6 +8,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Entidad que representa un usuario del sistema.
+ * Puede tener rol de PROFESOR o ESTUDIANTE.
+ * La contraseña se oculta en las respuestas JSON mediante @JsonProperty(WRITE_ONLY).
+ */
+
 @Entity
 @Table(name = "usuarios")
 @NoArgsConstructor

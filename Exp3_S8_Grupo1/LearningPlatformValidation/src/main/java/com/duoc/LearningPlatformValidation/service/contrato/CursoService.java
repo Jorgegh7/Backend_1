@@ -5,6 +5,10 @@ import com.duoc.LearningPlatformValidation.model.Curso;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Interfaz que define las operaciones de negocio para la entidad Curso.
+ */
+
 public interface CursoService {
 
     List<Curso> findAll();

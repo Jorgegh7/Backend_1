@@ -6,6 +6,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Entidad que representa un curso de la plataforma.
+ * Cada curso está asociado a un profesor mediante una relación @ManyToOne.
+ */
+
 @Entity
 @Table(name = "cursos")
 @NoArgsConstructor
